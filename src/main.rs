@@ -35,13 +35,12 @@ fn main() {
     println!("j: {}",j);
     println!("i: {}",i);
 
-    let cadena = String::from("Primera cadena");
-    let cadena2 = cadena1;
+    let cadena1 = String::from("Primera cadena");
+    // let cadena2 = cadena1; // Error
+    let cadena2 = cadena1.clone(); // Solución a la copia
 
     println!("Cadena2: {}", cadena2);
     println!("Cadena1: {}", cadena1);
-
-    
 
 }
 
